@@ -52,12 +52,7 @@
         <p class="sub-title">إحدى مبادرات جمعية حصن</p>
         <h1>غار حراء.. مهد الوحي ومبتدأ الرسالة</h1>
     </section>
-<div class="custom-visitor-card">
-    <h3 class="visitor-title">عدد زوار موقع غار حراء</h3>
-    <div class="visitor-counter-box">
-        <span id="ga-active-users">1</span>
-    </div>
-</div>
+
     <section class="lang-list">
         <a href="ar.html" class="lang-box"><img src="ar-btn.png.png" alt="العربية"></a>
         <a href="en.html" class="lang-box"><img src="en-btn.png.png" alt="English"></a>
@@ -103,27 +98,6 @@ window.onclick = function(event) {
     }
 }
 </script>
-<script>
-  window.addEventListener('load', function() {
-      if (typeof gtag === 'function') {
-          gtag('event', 'screen_view', {
-              'app_name': 'hisn_project_counter',
-              'screen_name': 'Main Screen Counter'
-          });
-          
-          let counterElement = document.getElementById('ga-active-users');
-          if (counterElement) {
-              let gaCount = localStorage.getItem('ga_cached_views') || 1;
-              gaCount = parseInt(gaCount) + 1;
-              localStorage.setItem('ga_cached_views', gaCount);
-              
-              counterElement.innerText = gaCount.toLocaleString();
-              counterElement.style.fontSize = "28px";
-              counterElement.style.fontWeight = "bold";
-              counterElement.style.color = "#333333";
-          }
-      }
-  });
-</script>
+
 </body>
 </html>
